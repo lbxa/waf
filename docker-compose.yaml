@@ -3,7 +3,7 @@ services:
   nginx:
     build:
       context: .
-      dockerfile: Dockerfile.linuxvm
+      dockerfile: Containerfile.debian
     container_name: linuxvm
     ports:
       - "80:80"

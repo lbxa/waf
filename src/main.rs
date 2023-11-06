@@ -1,4 +1,4 @@
-use libinjection_bindings::sqli;
+use waf::sqli;
 
 fn main() {
     let (is_sqli, fingerprint) = sqli("' OR '1'='1' --").unwrap();

@@ -1,15 +1,11 @@
 [package]
-name = "libinjection_bindings"
+name = "waf"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-[features]
-generate-bindings = []
-
 
 [build-dependencies]
 bindgen = "0.69.1"
-regex = "1.10.2"
 git2 = "0.18.1"

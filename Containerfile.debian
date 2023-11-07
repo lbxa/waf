@@ -2,7 +2,6 @@ FROM debian:stable
 # FROM debian:slim-bullseye to save some bytes
 
 # Update the package repository and install necessary dependencies
-# Build Nginx@1.14.2 from source
 RUN apt-get update && apt-get install -y \
     build-essential \
     wget \

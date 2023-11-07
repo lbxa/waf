@@ -36,6 +36,8 @@ fn run(cmd: &str, args: &[&str], cwd: &Path) -> bool {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
+    println!("cargo:rerun-if-changed=build.rs");
+
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
     let mut build_parent_dir: PathBuf = out_path.join(BUILD_DIR_NAME);
 

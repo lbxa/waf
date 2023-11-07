@@ -1,3 +1,7 @@
 [build]
 # symbols won't be available until runtime
 rustflags = ["-C", "link-args=-Wl,-undefined,dynamic_lookup"]
+
+[env]
+NGX_VERSION = "1.23.3"
+PCRE2_VERSION = "10.34"

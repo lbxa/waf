@@ -12,3 +12,8 @@ git2 = "0.18.1"
 
 [dependencies]
 ngx = "0.4.1"
+
+[lib]
+name = "waf"
+path = "src/lib.rs"
+crate-type = ["cdylib"] # generate output binary as DLL with *.so

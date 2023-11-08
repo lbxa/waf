@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
 # Download Nginx source code
 WORKDIR /nginx
 
-ENV NGINX_VER=1.14.2
+ENV NGINX_VER=1.23.3
 RUN git config --global http.sslVerify false
 RUN wget --no-check-certificate https://nginx.org/download/nginx-${NGINX_VER}.tar.gz
 RUN tar -xzvf nginx-${NGINX_VER}.tar.gz

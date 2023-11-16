@@ -1,2 +1,0 @@
-# Building NGINX from Source
-
